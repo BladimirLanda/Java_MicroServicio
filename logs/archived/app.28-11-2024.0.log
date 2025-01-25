@@ -1,0 +1,92 @@
+28-11-2024 12:13:16,411-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 10172 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+28-11-2024 12:13:16,420-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+28-11-2024 12:13:25,465-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 9.811 seconds (process running for 11.018)
+28-11-2024 12:16:55,482-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:17:10,988-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:17:19,797-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 12:22:43,844-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:22:48,111-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:22:51,179-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 17
+28-11-2024 12:22:55,029-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 17
+28-11-2024 12:23:29,133-06:00 [http-nio-8080-exec-9] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:23:31,254-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:25:15,454-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 16
+28-11-2024 12:25:19,314-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 17
+28-11-2024 12:25:23,768-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.TelefonoController - Obteniendo Lista de Telefonos
+28-11-2024 12:25:38,508-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:25:42,915-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.TelefonoController - Obteniendo Lista de Telefonos
+28-11-2024 12:29:43,739-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:29:50,522-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:29:55,235-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:29:55,269-06:00 [http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Valor demasiado largo para la columna "NUMERO CHARACTER VARYING(10)": "'45698729344444' (14)"
+Value too long for column "NUMERO CHARACTER VARYING(10)": "'45698729344444' (14)"; SQL statement:
+insert into telefono (lada,numero,tipo_telefono,id_usuario,id_telefono) values (?,?,?,?,default) [22001-232]
+28-11-2024 12:30:06,083-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:30:10,848-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:30:10,852-06:00 [http-nio-8080-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Valor demasiado largo para la columna "NUMERO CHARACTER VARYING(10)": "'45698729345' (11)"
+Value too long for column "NUMERO CHARACTER VARYING(10)": "'45698729345' (11)"; SQL statement:
+insert into telefono (lada,numero,tipo_telefono,id_usuario,id_telefono) values (?,?,?,?,default) [22001-232]
+28-11-2024 12:30:26,955-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:30:47,706-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 19
+28-11-2024 12:30:51,396-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:35:34,598-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:37:09,381-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:37:10,470-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:37:15,114-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 21
+28-11-2024 12:37:17,284-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:39:43,797-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:43:18,287-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:44:08,983-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:46:06,797-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:46:10,563-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:46:11,429-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 12:46:12,626-06:00 [http-nio-8080-exec-9] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:46:13,569-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 4
+28-11-2024 12:52:19,419-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:52:20,842-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:52:23,347-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 22
+28-11-2024 12:53:02,369-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:53:05,735-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 22
+28-11-2024 12:54:20,233-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:55:25,242-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:55:57,887-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 12:55:59,602-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:56:01,891-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 23
+28-11-2024 12:56:16,950-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 23
+28-11-2024 12:56:19,796-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:57:34,236-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 12:59:50,961-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 12:59:54,633-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 12:59:57,575-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:00:09,847-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:00:11,467-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:00:13,692-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:00:14,424-06:00 [http-nio-8080-exec-9] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:01:33,033-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:01:35,306-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:01:39,298-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 13:01:42,309-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:01:43,974-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:01:46,958-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:01:55,058-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.TelefonoController - Eliminado Telefono por id 18
+28-11-2024 13:05:13,700-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:05:16,240-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 4
+28-11-2024 13:05:20,188-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 13:05:21,347-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:05:26,299-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:05:29,639-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 4
+28-11-2024 13:05:31,389-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 4
+28-11-2024 13:05:33,489-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 4
+28-11-2024 13:05:43,607-06:00 [http-nio-8080-exec-9] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+28-11-2024 13:05:44,362-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:05:45,667-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 4
+28-11-2024 13:08:37,031-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:08:44,221-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:08:47,963-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:08:59,688-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+28-11-2024 13:10:42,709-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:19:03,701-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 17644 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+28-11-2024 13:19:03,706-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+28-11-2024 13:19:12,097-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 9.026 seconds (process running for 9.966)
+28-11-2024 13:19:13,462-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+28-11-2024 13:21:28,268-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios

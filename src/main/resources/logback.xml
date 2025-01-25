@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--DIRECTIVA: Configuración de registro de actividad en la Consola-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <!--Patrón de logs-->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{"dd-MM-yyyy HH:mm:ss,SSSXXX", "America/Mexico_City"} [%t] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
+    <!--DIRECTIVA: Configuración de registro de actividad para almacen-->
+    <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--Directorio del archivo log principal-->
+        <file>logs/ebacSpringBootApp.log</file>
+
+        <!--Política archivo log-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!--Directorio de almacen-->
+            <fileNamePattern>logs/archived/app.%d{dd-MM-yyyy}.%i.log</fileNamePattern>
+            <!--Tamaño máximo del archivo log (antes de almacen)-->
+            <maxFileSize>2MB</maxFileSize>
+            <!--Tamaño máximo de almacen-->
+            <totalSizeCap>10MB</totalSizeCap>
+            <!--Número máximo de archivos en el almacen-->
+            <maxHistory>5</maxHistory>
+        </rollingPolicy>
+
+        <!--Codificación de logs-->
+        <encoder>
+            <pattern>%d %p %c [%t] %m%n</pattern>
+        </encoder>
+
+        <!--Patrón de logs-->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{"dd-MM-yyyy HH:mm:ss,SSSXXX", "America/Mexico_City"} [%t] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
+    <!--Configuración de objetivo de registro (name = proyecto)/tipo (level = .INFO)-->
+    <!--additivity: Hace referencia al uso de todos los logs registrados cuando se usa un log especifico-->
+    <logger name="com.ebac.modulo65" level="info" additivity="false">
+        <!--Registro de Directivas-->
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE-ROLLING"/>
+    </logger>
+
+    <!--Configuración de objetivo global para tipo fallo (level = .ERROR)-->
+    <root level="error">
+        <!--Registro de Directivas-->
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE-ROLLING"/>
+    </root>
+</configuration>

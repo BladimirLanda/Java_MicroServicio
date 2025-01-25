@@ -1,0 +1,59 @@
+23-11-2024 09:01:30,707-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 14492 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+23-11-2024 09:01:30,724-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+23-11-2024 09:01:37,811-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 7.957 seconds (process running for 9.4)
+23-11-2024 09:01:39,383-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 09:03:40,038-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.TelefonoController - Obteniendo Lista de Telefonos
+23-11-2024 09:24:11,880-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+23-11-2024 09:27:24,775-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+23-11-2024 09:31:12,810-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+23-11-2024 09:33:23,211-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+23-11-2024 09:36:13,218-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 09:39:56,437-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 09:46:06,090-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+23-11-2024 09:49:05,394-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+23-11-2024 09:51:26,529-06:00 [main] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 1
+23-11-2024 09:52:51,697-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+23-11-2024 09:52:51,763-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+23-11-2024 09:52:51,778-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+23-11-2024 09:52:51,785-06:00 [main] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 1
+23-11-2024 09:52:51,802-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 09:52:51,812-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+23-11-2024 09:52:51,820-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 09:52:51,827-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+23-11-2024 09:52:51,834-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+23-11-2024 10:53:11,797-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+23-11-2024 10:53:11,926-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+23-11-2024 10:53:11,949-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+23-11-2024 10:53:11,960-06:00 [main] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 1
+23-11-2024 10:53:11,994-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 10:53:12,013-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+23-11-2024 10:53:12,026-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 10:53:12,035-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+23-11-2024 10:53:12,052-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+23-11-2024 10:53:33,712-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 15908 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+23-11-2024 10:53:33,718-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+23-11-2024 10:53:42,561-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 9.645 seconds (process running for 10.65)
+23-11-2024 10:53:43,269-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 10:54:22,504-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
+23-11-2024 10:54:31,275-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 10:55:17,918-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
+23-11-2024 10:55:36,703-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
+23-11-2024 11:44:48,276-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+23-11-2024 11:44:48,426-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+23-11-2024 11:44:48,443-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+23-11-2024 11:44:48,450-06:00 [main] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 1
+23-11-2024 11:44:48,478-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 11:44:48,494-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+23-11-2024 11:44:48,500-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 11:44:48,505-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+23-11-2024 11:44:48,513-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+23-11-2024 11:45:04,622-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 5080 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+23-11-2024 11:45:04,627-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+23-11-2024 11:45:13,874-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 9.906 seconds (process running for 10.865)
+23-11-2024 11:46:58,870-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 18068 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+23-11-2024 11:46:58,875-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+23-11-2024 11:47:06,974-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 8.785 seconds (process running for 9.853)
+23-11-2024 11:47:25,148-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
+23-11-2024 11:47:35,327-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+23-11-2024 11:47:47,284-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
+23-11-2024 11:47:52,683-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono

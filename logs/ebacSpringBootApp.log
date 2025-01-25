@@ -1,0 +1,84 @@
+24-01-2025 14:12:01,338-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 10096 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+24-01-2025 14:12:01,349-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+24-01-2025 14:12:07,454-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 6.827 seconds (process running for 7.893)
+24-01-2025 14:13:30,488-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+24-01-2025 14:14:12,791-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
+24-01-2025 14:14:30,860-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+24-01-2025 14:14:36,211-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+24-01-2025 14:14:56,970-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 4
+24-01-2025 14:15:15,162-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 24
+24-01-2025 14:15:21,451-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 4
+24-01-2025 14:15:30,019-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.TelefonoController - Obteniendo Lista de Telefonos
+24-01-2025 14:16:53,261-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 13964 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+24-01-2025 14:16:53,265-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+24-01-2025 14:16:57,492-06:00 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Association 'com.ebac.modulo65.dto.Telefono.id_usuario' targets the type 'long' which is not an '@Entity' type
+24-01-2025 14:16:57,558-06:00 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Association 'com.ebac.modulo65.dto.Telefono.id_usuario' targets the type 'long' which is not an '@Entity' type
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.ebac.modulo65.Modulo65Application.main(Modulo65Application.java:10)
+Caused by: org.hibernate.AnnotationException: Association 'com.ebac.modulo65.dto.Telefono.id_usuario' targets the type 'long' which is not an '@Entity' type
+	at org.hibernate.boot.model.internal.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:110)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1937)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1886)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1794)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1849)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
+	... 15 common frames omitted
+24-01-2025 14:17:25,617-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 14480 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+24-01-2025 14:17:25,621-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+24-01-2025 14:17:31,378-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 6.35 seconds (process running for 7.26)
+24-01-2025 14:17:48,752-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.TelefonoController - Obteniendo Telefono por id 8
+24-01-2025 14:17:56,452-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.TelefonoController - Obteniendo Telefono por id 1
+24-01-2025 14:18:27,901-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
+24-01-2025 14:18:41,473-06:00 [http-nio-8080-exec-9] INFO  c.e.m.controller.TelefonoController - Actualizando Telefono por id 1
+24-01-2025 14:18:51,242-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.TelefonoController - Eliminado Telefono por id 19
+24-01-2025 14:21:00,902-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 5472 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+24-01-2025 14:21:00,908-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+24-01-2025 14:21:06,792-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 6.508 seconds (process running for 7.387)
+24-01-2025 14:22:50,570-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 2308 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+24-01-2025 14:22:50,577-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "prod"
+24-01-2025 14:22:56,588-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 6.646 seconds (process running for 7.604)
+24-01-2025 14:23:07,996-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+24-01-2025 14:23:20,823-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+24-01-2025 14:23:34,883-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+24-01-2025 14:23:44,090-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 4
+24-01-2025 14:23:50,411-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 4
+24-01-2025 14:24:07,293-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.TelefonoController - Obteniendo Lista de Telefonos
+24-01-2025 14:24:19,324-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.TelefonoController - Obteniendo Telefono por id 1
+24-01-2025 14:24:27,040-06:00 [http-nio-8080-exec-9] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
+24-01-2025 14:25:22,898-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.TelefonoController - Actualizando Telefono por id 4
+24-01-2025 14:25:28,940-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.TelefonoController - Eliminado Telefono por id 4
+24-01-2025 15:51:59,948-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 9420 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+24-01-2025 15:51:59,953-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "prod"
+24-01-2025 15:52:08,745-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 9.569 seconds (process running for 10.812)
+24-01-2025 15:52:38,308-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+24-01-2025 15:52:38,489-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+24-01-2025 15:52:38,510-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+24-01-2025 15:52:38,521-06:00 [main] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 1
+24-01-2025 15:52:38,543-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+24-01-2025 15:52:38,558-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
+24-01-2025 15:52:38,567-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+24-01-2025 15:52:38,576-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
+24-01-2025 15:52:38,586-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
