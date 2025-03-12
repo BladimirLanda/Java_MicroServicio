@@ -47,7 +47,7 @@
 
     <!--
     Configuración de Logger
-    -Solo los logs del paquete (name )se registrarán con nivel INFO o superior (WARN, ERROR)
+    -Solo los logs del paquete (name) se registrarán con nivel INFO o superior (WARN, ERROR)
     -Se enviarán tanto a la consola como a los archivos de log
     -additivity="false" → Evita que los logs se dupliquen en el Root Logger
     -->
@@ -59,7 +59,7 @@
     <!--
     Configuración Root Logger (Global)
     -Maneja todos los logs no especificados en <logger>
-    -Solo se registran logs de nivel ERROR o superior
+    -Solo se registran logs de nivel ERROR o superior (WARN)
     -Se envían tanto a la consola como a los archivos.
     -->
     <root level="error">
