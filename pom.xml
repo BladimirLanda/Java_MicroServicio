@@ -128,7 +128,8 @@
 			</plugin>
 		</plugins>
 
-		<!--Recursos Disponibles en la Compilación
+		<!--
+		Recursos Disponibles en la Compilación
 
 		✔ Cuando se necesita que ciertos valores cambien dependiendo del perfil (dev o prod).
 		✔ Cuando se usa Spring Boot y necesitas variables dinámicas en application.properties/.yml
