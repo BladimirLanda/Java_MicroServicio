@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <!--DIRECTIVA: Configuración de registro de actividad en la Consola-->
+    <!--APPENDER CONSOLE: Configuración de registro de actividad en la Consola-->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <!--Patrón de logs-->
+        <!--
+        Patrón de logs
+        %d{} → Fecha con zona horaria específica
+        %t → Hilo + Nivel del log (INFO, ERROR, DEBUG)
+        %-5level → Nivel del log (INFO, ERROR, DEBUG)
+        %logger{36} → Nombre del logger con máximo 36 caracteres
+        %msg → Mensaje del log.Mensaje del log
+        %n → Salto de línea.
+
+        "12-03-2025 14:30:15,123-06:00 [main] INFO  paquete.subpaquet.Clase - Mensaje del log"
+        -->
         <layout class="ch.qos.logback.classic.PatternLayout">
             <Pattern>
                 %d{"dd-MM-yyyy HH:mm:ss,SSSXXX", "America/Mexico_City"} [%t] %-5level %logger{36} - %msg%n
@@ -10,28 +20,23 @@
         </layout>
     </appender>
 
-    <!--DIRECTIVA: Configuración de registro de actividad para almacen-->
+    <!--APPENDER PERSISTENT FILE: Configuración de registro de actividad para almacen-->
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <!--Directorio del archivo log principal-->
+        <!--Directorio de Almacén de Logs-->
         <file>logs/ebacSpringBootApp.log</file>
 
-        <!--Política archivo log-->
+        <!--Configuración de Rotación-->
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <!--Directorio de almacen-->
+            <!--Nuevo Archivo Log (app.12-03-2025.0.log)-->
             <fileNamePattern>logs/archived/app.%d{dd-MM-yyyy}.%i.log</fileNamePattern>
-            <!--Tamaño máximo del archivo log (antes de almacen)-->
+            <!--Tamaño máximo del Archivo (antes de archivar)-->
             <maxFileSize>2MB</maxFileSize>
-            <!--Tamaño máximo de almacen-->
+            <!--Tamaño máximo de Almacén-->
             <totalSizeCap>10MB</totalSizeCap>
-            <!--Número máximo de archivos en el almacen-->
+            <!--Número Máximo de Archivos (antes de eliminar más antiguos)-->
             <maxHistory>5</maxHistory>
         </rollingPolicy>
 
-        <!--Codificación de logs-->
-        <encoder>
-            <pattern>%d %p %c [%t] %m%n</pattern>
-        </encoder>
-
         <!--Patrón de logs-->
         <layout class="ch.qos.logback.classic.PatternLayout">
             <Pattern>
@@ -40,17 +45,24 @@
         </layout>
     </appender>
 
-    <!--Configuración de objetivo de registro (name = proyecto)/tipo (level = .INFO)-->
-    <!--additivity: Hace referencia al uso de todos los logs registrados cuando se usa un log especifico-->
+    <!--
+    Configuración de Logger
+    -Solo los logs del paquete (name )se registrarán con nivel INFO o superior (WARN, ERROR)
+    -Se enviarán tanto a la consola como a los archivos de log
+    -additivity="false" → Evita que los logs se dupliquen en el Root Logger
+    -->
     <logger name="com.ebac.modulo65" level="info" additivity="false">
-        <!--Registro de Directivas-->
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE-ROLLING"/>
     </logger>
 
-    <!--Configuración de objetivo global para tipo fallo (level = .ERROR)-->
+    <!--
+    Configuración Root Logger (Global)
+    -Maneja todos los logs no especificados en <logger>
+    -Solo se registran logs de nivel ERROR o superior
+    -Se envían tanto a la consola como a los archivos.
+    -->
     <root level="error">
-        <!--Registro de Directivas-->
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE-ROLLING"/>
     </root>

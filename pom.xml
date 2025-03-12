@@ -37,33 +37,34 @@
 	</properties>
 
 	<dependencies>
+		<!--SpringBoot Web-Starter-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--SpringBoot Web-Test-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 
-		<!--Dependencias JPA / MySQL / H2-->
-		<!-- spring-boot-starter-data-jpa -->
+		<!--SpringBoot-Data JPA-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 			<version>3.3.5</version>
 		</dependency>
 
-		<!-- JDBC Driver of the MySQL protocol -->
+		<!--JDBC Driver of the MySQL protocol-->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.33</version>
 		</dependency>
 
-		<!-- h2database-h2 -->
+		<!--H2-Database Driver Engine-->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -71,8 +72,21 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!--Dependencias lombok / logback-->
-		<!-- lombok: Libreria de anotaciones -->
+		<!--
+		Lombok Annotation-Project
+		Es una biblioteca para Java que reduce el código repetitivo mediante anotaciones.
+		Se usa principalmente para generar automáticamente métodos como getter, setter, equals,
+		hashCode, toString, constructores y más, sin necesidad de escribirlos manualmente.
+		@Getter y @Setter: Generan métodos getter y setter.
+
+		@NoArgsConstructor: Genera un constructor vacío.
+		@AllArgsConstructor: Genera un constructor con todos los campos.
+		@RequiredArgsConstructor: Genera un constructor con los campos marcados como final.
+		@ToString: Genera toString().
+		@EqualsAndHashCode: Genera equals() y hashCode().
+		@Data: Combina @Getter, @Setter, @ToString, @EqualsAndHashCode y @RequiredArgsConstructor.
+		@Slf4j:Genera automáticamente un logger de SLF4J
+		-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -80,15 +94,23 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- logback-classic: Libreria de registro de eventos -->
+		<!--
+		Logback Logging-Classic
+		Es una librería de implementación de registro (logging) para Java.
+		Se usa para gestionar logs de aplicaciones de manera eficiente. Es
+		la implementación predeterminada para SLF4J (Simple Logging Facade for Java).
+
+		1) logback-core → Base del framework (necesario para logback-classic).
+		2) logback-classic → Implementación completa de logging compatible con SLF4J (necesita org.slf4j).
+		3) logback-access → Para registrar logs en aplicaciones web basadas en Servlets.
+		-->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>1.5.12</version>
 		</dependency>
 
-		<!--Dependencia test Mockito-->
-		<!-- mockito-core -->
+		<!--Test mockito-core-->
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
@@ -96,6 +118,31 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<!--SprinBoot-Maven-->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+
+		<!--Recursos Disponibles en la Compilación
+
+		✔ Cuando se necesita que ciertos valores cambien dependiendo del perfil (dev o prod).
+		✔ Cuando se usa Spring Boot y necesitas variables dinámicas en application.properties/.yml
+
+		En caso de perfiles Spring Boot sigue la convención de nombres (application-{profile}.properties).
+		-->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<!--Filtrado de Propiedades a Valores Definidos en el POM-->
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
 
 	<!--Implementación de Perfiles-->
 	<profiles>
@@ -118,24 +165,7 @@
 			</properties>
 		</profile>
 
-		<!-- INTERFAZ: -Dspring.profiles.active=dev / -Dspring.profiles.active=prod -->
-		<!-- EJECUCIÓN: java -jar -Dspring.profiles.active=(dev/prod) Aplicacion.jar -->
+		<!-- INTERFAZ (VM options): -Dspring.profiles.active=dev/prod -->
+		<!-- EJECUCIÓN: java -jar -Dspring.profiles.active=dev/prod App.jar -->
 	</profiles>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-
-		<!--Activación de filtro y acceso a /resources (RECURSOS)-->
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
-	</build>
 </project>

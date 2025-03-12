@@ -1,19 +1,10 @@
-24-01-2025 14:12:01,338-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 10096 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
-24-01-2025 14:12:01,349-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
-24-01-2025 14:12:07,454-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 6.827 seconds (process running for 7.893)
-24-01-2025 14:13:30,488-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
-24-01-2025 14:14:12,791-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 2
-24-01-2025 14:14:30,860-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
-24-01-2025 14:14:36,211-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
-24-01-2025 14:14:56,970-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 4
-24-01-2025 14:15:15,162-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 24
-24-01-2025 14:15:21,451-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 4
-24-01-2025 14:15:30,019-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.TelefonoController - Obteniendo Lista de Telefonos
-24-01-2025 14:16:53,261-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 13964 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
-24-01-2025 14:16:53,265-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
-24-01-2025 14:16:57,492-06:00 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Association 'com.ebac.modulo65.dto.Telefono.id_usuario' targets the type 'long' which is not an '@Entity' type
-24-01-2025 14:16:57,558-06:00 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Association 'com.ebac.modulo65.dto.Telefono.id_usuario' targets the type 'long' which is not an '@Entity' type
+12-03-2025 15:19:59,307-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 636 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+12-03-2025 15:19:59,310-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+12-03-2025 15:20:06,866-06:00 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-232]
+12-03-2025 15:20:06,871-06:00 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+12-03-2025 15:20:06,923-06:00 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
@@ -30,12 +21,14 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
 	at com.ebac.modulo65.Modulo65Application.main(Modulo65Application.java:10)
-Caused by: org.hibernate.AnnotationException: Association 'com.ebac.modulo65.dto.Telefono.id_usuario' targets the type 'long' which is not an '@Entity' type
-	at org.hibernate.boot.model.internal.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:110)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1937)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1886)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1794)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
@@ -46,39 +39,81 @@ Caused by: org.hibernate.AnnotationException: Association 'com.ebac.modulo65.dto
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1849)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
 	... 15 common frames omitted
-24-01-2025 14:17:25,617-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 14480 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
-24-01-2025 14:17:25,621-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
-24-01-2025 14:17:31,378-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 6.35 seconds (process running for 7.26)
-24-01-2025 14:17:48,752-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.TelefonoController - Obteniendo Telefono por id 8
-24-01-2025 14:17:56,452-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.TelefonoController - Obteniendo Telefono por id 1
-24-01-2025 14:18:27,901-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
-24-01-2025 14:18:41,473-06:00 [http-nio-8080-exec-9] INFO  c.e.m.controller.TelefonoController - Actualizando Telefono por id 1
-24-01-2025 14:18:51,242-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.TelefonoController - Eliminado Telefono por id 19
-24-01-2025 14:21:00,902-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 5472 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
-24-01-2025 14:21:00,908-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
-24-01-2025 14:21:06,792-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 6.508 seconds (process running for 7.387)
-24-01-2025 14:22:50,570-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 2308 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
-24-01-2025 14:22:50,577-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "prod"
-24-01-2025 14:22:56,588-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 6.646 seconds (process running for 7.604)
-24-01-2025 14:23:07,996-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
-24-01-2025 14:23:20,823-06:00 [http-nio-8080-exec-3] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
-24-01-2025 14:23:34,883-06:00 [http-nio-8080-exec-4] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
-24-01-2025 14:23:44,090-06:00 [http-nio-8080-exec-5] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 4
-24-01-2025 14:23:50,411-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 4
-24-01-2025 14:24:07,293-06:00 [http-nio-8080-exec-7] INFO  c.e.m.controller.TelefonoController - Obteniendo Lista de Telefonos
-24-01-2025 14:24:19,324-06:00 [http-nio-8080-exec-8] INFO  c.e.m.controller.TelefonoController - Obteniendo Telefono por id 1
-24-01-2025 14:24:27,040-06:00 [http-nio-8080-exec-9] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
-24-01-2025 14:25:22,898-06:00 [http-nio-8080-exec-10] INFO  c.e.m.controller.TelefonoController - Actualizando Telefono por id 4
-24-01-2025 14:25:28,940-06:00 [http-nio-8080-exec-1] INFO  c.e.m.controller.TelefonoController - Eliminado Telefono por id 4
-24-01-2025 15:51:59,948-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 9420 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
-24-01-2025 15:51:59,953-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "prod"
-24-01-2025 15:52:08,745-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 9.569 seconds (process running for 10.812)
-24-01-2025 15:52:38,308-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
-24-01-2025 15:52:38,489-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
-24-01-2025 15:52:38,510-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
-24-01-2025 15:52:38,521-06:00 [main] INFO  c.e.m.controller.UsuarioController - Eliminando Usuario por id 1
-24-01-2025 15:52:38,543-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
-24-01-2025 15:52:38,558-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Usuario por id 1
-24-01-2025 15:52:38,567-06:00 [main] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
-24-01-2025 15:52:38,576-06:00 [main] INFO  c.e.m.controller.UsuarioController - Actualizando Usuario por id 1
-24-01-2025 15:52:38,586-06:00 [main] INFO  c.e.m.controller.UsuarioController - Agregando Nuevo Usuario
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:392)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 30 common frames omitted
+12-03-2025 15:23:35,285-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 2032 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+12-03-2025 15:23:35,295-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+12-03-2025 15:23:42,692-06:00 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-232]
+12-03-2025 15:23:45,320-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 10.801 seconds (process running for 11.917)
+12-03-2025 15:24:12,783-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 15024 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+12-03-2025 15:24:12,791-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+12-03-2025 15:24:19,409-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 7.38 seconds (process running for 8.444)
+12-03-2025 15:24:47,508-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.UsuarioController - Obteniendo Lista de Usuarios
+12-03-2025 15:28:19,768-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Starting Modulo65Application using Java 17.0.11 with PID 19520 (C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST\target\classes started by bladi in C:\Users\bladi\OneDrive\Documentos\Documentos BCL\Cursos\Full-Stack\Desarrollador JAVA (EBAC)\Módulos\Códigos\Módulo 65\2_MCREST)
+12-03-2025 15:28:19,773-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - The following 1 profile is active: "dev"
+12-03-2025 15:28:27,165-06:00 [main] INFO  c.ebac.modulo65.Modulo65Application - Started Modulo65Application in 8.172 seconds (process running for 9.304)
+12-03-2025 15:29:47,418-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.TelefonoController - Obteniendo Lista de Telefonos
+12-03-2025 15:35:31,907-06:00 [http-nio-8080-exec-2] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono
+12-03-2025 15:35:31,918-06:00 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.ebac.modulo65.dto.Usuario.getId_usuario()" because the return value of "com.ebac.modulo65.dto.Telefono.getUsuario()" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.ebac.modulo65.dto.Usuario.getId_usuario()" because the return value of "com.ebac.modulo65.dto.Telefono.getUsuario()" is null
+	at com.ebac.modulo65.controller.TelefonoController.crearTelefono(TelefonoController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+12-03-2025 15:35:44,124-06:00 [http-nio-8080-exec-6] INFO  c.e.m.controller.TelefonoController - Agregando Nuevo Telefono

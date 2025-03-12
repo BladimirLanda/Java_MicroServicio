@@ -2,16 +2,18 @@ package com.ebac.modulo65.controller;
 
 import com.ebac.modulo65.dto.Usuario;
 import com.ebac.modulo65.service.UsuarioService;
-import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.List;
 import java.util.Optional;
 
-//@Slf4j: Notación lombok de implementación y registro logback
+//@Slf4j:Lombok Annotation
 @Slf4j
 @RestController
 public class UsuarioController {
@@ -39,7 +41,7 @@ public class UsuarioController {
     //GetById
     @GetMapping("/usuarios/{id}")
     public ResponseWrapper<Usuario> obtenerUsuario(@PathVariable Long id) {
-        //{}: Declaración de variables ({} {}, var1, var2)
+        //log.nivel({} {}, var1, var2)): Declaración de Variables Dinámicas
         log.info("Obteniendo Usuario por id {}", id);
 
         Optional<Usuario> usuarioOptional = usuarioService.obtenerUsuarioPorId(id);
