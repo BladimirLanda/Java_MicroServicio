@@ -104,6 +104,8 @@
 		2) logback-classic → Implementación completa de logging compatible con SLF4J (necesita org.slf4j).
 		3) logback-access → Para registrar logs en aplicaciones web basadas en Servlets.
 
+		Nota: En versiones antiguas, logback-classic incluía logback-core automáticamente,
+		desde Logback 1.4+, necesitas agregar logback-core manualmente.
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
