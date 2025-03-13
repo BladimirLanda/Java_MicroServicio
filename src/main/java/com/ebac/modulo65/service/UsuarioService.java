@@ -29,7 +29,7 @@ public class UsuarioService {
 
     //GetAll
     public List<Usuario> obtenerUsuarios() {
-        return  usuarioRepository.findAll();
+        return usuarioRepository.findAll();
     }
 
     //Put

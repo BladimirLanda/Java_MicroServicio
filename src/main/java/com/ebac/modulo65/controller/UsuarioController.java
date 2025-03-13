@@ -23,7 +23,7 @@ public class UsuarioController {
 
     //Post
     @PostMapping("/usuarios")
-    public ResponseWrapper<Usuario> crearUsuario(@RequestBody Usuario usuario){
+    public ResponseWrapper<Usuario> crearUsuario(@RequestBody Usuario usuario) {
         log.info("Agregando Nuevo Usuario");
 
         try {
