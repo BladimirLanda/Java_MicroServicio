@@ -111,6 +111,12 @@
 			<artifactId>logback-core</artifactId>
 			<version>1.5.12</version>
 		</dependency>
+
+		Nota: El "annotation processing" es una característica que permite a
+		herramientas como Logback procesar las anotaciones y
+		generar código en tiempo de compilación. Habilitar:
+		File > Settings > Build, Execution, Deployment > Compiler > Annotation Processors
+		>Enable annotation processing (true/false)
 		-->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
